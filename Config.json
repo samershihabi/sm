@@ -1,0 +1,71 @@
+{
+  "organization": "org-1",
+  "username": "user1",
+  "password": "password",
+  "dev-env": {
+    "cache": [
+      {
+        "name": "cache-name",
+        "description": "a description of the cache resource",
+        "expirySettings": "timeInSec || timeOfDay (hh:mm:ss) || expiryDate (mm-dd-yyyy)",
+        "overflowToDisk": "true || false",
+        "skipCacheIfElementSizeInKBExceeds": "disable || enable"
+      }
+    ],
+    "kvm": [
+      {
+        "name": "Map_name",
+        "encrypted": "true || false",
+        "entery": [
+          {
+            "name": "key1",
+            "value": "value_one"
+          },
+          {
+            "name": "key2",
+            "value": "value_two"
+          }
+        ]
+      }
+    ],
+    "product": [
+      {
+        "name": "{name}",
+        "displayName": "{display_name}",
+        "approvalType": {
+          "manual || auto"
+        },
+        "attributes": [
+          {
+            "name": "access",
+            "value": "{public, private, or internal}"
+          },
+          {
+            "name": "{attribute_name2}",
+            "value": "{value2}"
+          }
+        ],
+        "description": "{description}",
+        "apiResources": [
+          "{/resource1}",
+          "{/resource2}"
+        ],
+        "environments": [
+          "{test}",
+          "{prod}"
+        ],
+        "proxies": [
+          "{proxy1}",
+          "{proxy2}"
+        ],
+        "quota": "{quota}",
+        "quotaInterval": "{quota_interval}",
+        "quotaTimeUnit": "{quota_unit}",
+        "scopes": [
+          "{scope1}",
+          "{scope2}"
+        ]
+      }
+    ]
+  }
+}
