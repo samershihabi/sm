@@ -1,0 +1,27 @@
+{
+  "name": "apigeefit",
+  "version": "0.0.1",
+  "description": "Configuration and Maintinanse",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/salehmashal/sm.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "dependencies": {
+    "apigeetool": "latest",
+    "basic-authorization-header": "^0.2.7",
+    "request": "^2.83.0"
+  },
+  "author": "saleh mashal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salehmashal/sm/issues"
+  },
+  "homepage": "https://github.com/salehmashal/sm#readme"
+}
