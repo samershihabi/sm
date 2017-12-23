@@ -15,8 +15,16 @@
   ],
   "dependencies": {
     "apigeetool": "latest",
+    "async": "^2.6.0",
     "basic-authorization-header": "^0.2.7",
-    "request": "^2.83.0"
+    "in_array": "^1.1.0",
+    "is-upper-case": "^1.1.2",
+    "jszip": "^3.1.5",
+    "node-dir": "^0.1.17",
+    "request": "^2.83.0",
+    "tmp": "0.0.33",
+    "url": "^0.11.0",
+    "zip-dir": "^1.0.2"
   },
   "author": "saleh mashal",
   "license": "ISC",

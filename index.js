@@ -1,30 +1,12 @@
 var kvm = require('./lib/requests/apigee-proxy-kvm-apis');
+var util = require('./lib/utils');
+var apis = require('./lib/requests/apigee-api-proxy-apis');
+var ziputils = require('./lib/ziputils');
 
-
-var req = {
-    "username": "saleh-jaz1@hotmail.com",
-    "password": "P@$$w0rd",
-    "org": "salehmashal",
-    "api": "oauth",
-    "kvm": {
-        "name": "Map_name1",
-        "encrypted": "true",
-        "entry": [
-            {
-                "name": "Key1",
-                "value": "value_one"
-            },
-            {
-                "name": "Key2",
-                "value": "value_two"
-            }
-        ]
-    }
-
-}
-kvm.createProxyKvm(req);
-kvm.getProxyKvm(req);
-kvm.getProxyKvmEntry(req);
-kvm.getProxyKvmList(req);
-kvm.deleteProxyKvm(req);
-kvm.deleteProxyKvmEntry(req);
+//var dirCheck=util.apiProxyDirsCheck('/Users/ap/ab_api_proxies/apiproxy/');
+ziputils.zipDirectory('/Users/ap/ab_api_proxies/mock/', 'apiproxy', function (err, zipBuf) {
+    if (err) throw new Error(err);
+    console.log(zipBuf)
+    //apis.importNewApiProxy("saleh-jaz1@hotmail.com", "P@$$w0rd", "salehmashal", "mock",zipBuf);
+    apis.deployApiProxyRevision("saleh-jaz1@hotmail.com", "P@$$w0rd", "salehmashal", "test", "mock", 1, 100, true);
+});
