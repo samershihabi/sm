@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Assign-Message-401-Missing-API-Key">
+    <DisplayName>Assign-Message-401-Missing-API-Key</DisplayName>
+    <AssignVariable>
+        <Name>flow.error.code</Name>
+        <Value>401.001.000</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.message</Name>
+        <Value>Missing API Key.</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.url</Name>
+        <Value>https://developer.arabbank.com.jo/errors/401001000</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.status</Name>
+        <Value>401</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.reason</Name>
+        <Value>Unauthorized</Value>
+    </AssignVariable>
+</AssignMessage>

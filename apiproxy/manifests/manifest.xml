@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+    <Policies>
+        <VersionInfo resourceName="ATMs-Response-Cache" version="74dd599cb54d48bba8dee1faed7b269602a7268e111ec2484c4b51ba4f77f993f1949f3aa22b195dbe3b021fca314722223551ac68ff7896a410fc15d4f6c27a"/>
+        <VersionInfo resourceName="Assign-Message-Country-Code-To-Path-From-IP" version="d6d24fb997bed62d77926ac781d4ee07d18427717f63c4443bb0ef5d61df8ac74eab910fa7996b50685c2f22dc6235c81ed4fa08687ceda5f4682d9510df48f1"/>
+        <VersionInfo resourceName="Assign-Message-Country-Code-To-Path-From-Query-Param" version="823bd7ecfd2b4293da5f241d8c3cf544ef3e0f443dd84ccd85e340fdea988a5c69adf56f66caee50f5eda5ad85e5639fef2bbb038951e594daf3b3416847c3fe"/>
+        <VersionInfo resourceName="Branches-Response-Cache" version="161097e53265245f4452c7434daca1cb93f3ddb85469ef85da0edd5083fae3389d33e461747884e9efa706147cfbeb75ed78ac678750dd8e14ded1c86243e7ee"/>
+        <VersionInfo resourceName="Extract-Variables-IP-Geo-Location" version="70bd868b4fadb694e38fbe636b3dd4b459f18dd4c81cacedf20968e74d526c2bb55229d073dd7359f5d410a723de00ab87199f367def69e915c829e4f21b5777"/>
+        <VersionInfo resourceName="Extract-Variables-IP-Geo-Location-Origin" version="456d0e948577509852b2f512c6b19102f2791466a224f328beec12586579c2c50a390470ec05f084d6d8aaac0883166790c52fafd93958b2a5d7a5ced3a97d4d"/>
+        <VersionInfo resourceName="Extract-Variables-Request-Query-Params-With-Ip-Address" version="720a4f6bac3ce2ac5a01cab470ac0ce4dcab231fd7c7cecd5dbe23dd107416ff0c332b96790894f9b98f1500e859117726067e1bb25dfa4247f4d0173ebc4c3d"/>
+        <VersionInfo resourceName="Extract-Variables-Request-Query-Params-Without-Ip-Address" version="42e59c622bc4bda89c419594399dce76ce1cf4155e83c38f6050ab0c1e516b95ca42407001af92c52a463bb463d3620423d2536659cdf181a1b5e74f14c2164e"/>
+        <VersionInfo resourceName="Flow-Callout-Fault-Rules-Handling" version="20fdf31da90e65fb8e621ae9c3d380a05982de363a642981c4fe98d68a112e87516ba2002b39f8fa90b51fc8b78f91bb92273f598d82d881ad44c5cc2909f94e"/>
+        <VersionInfo resourceName="ITMs-Response-Cache" version="f98270823454d6b36f5ac056b09cdb30ae0c4b717a232deef3352b7f6429359b0ecf0f284e16d28ae3fb8cf3d7d4e4cab797b8526204b1bc542e0ff86b9b5b87"/>
+        <VersionInfo resourceName="JS-Google-Distance-Matrix-Call-Out" version="22b2ef83b5aa0538b67912462dfc784eab19daf854a03ba9d113360fbc4c05ebe9c6faba5abfb4396e5d8d3918a556d7247c06e6056a6962181db445e483ef19"/>
+        <VersionInfo resourceName="JS-Response-Beautify" version="163f388dfb9936b2a458d9996658b34c0a8f6c8d0c9bb35bd352df7fb10c24fc42faba20c1724b0f2f544bd700231d6d5911eb1ff28c8b77502be1962617919d"/>
+        <VersionInfo resourceName="KVM-Geo-Location-Config" version="9f43a3e180e3954fe3b0ab783afe22fd5c673dee393cdca84bc3e39ce43071de31cbcc8fbe2d07fd22eb763b4239f363e95a57b17f1c33dba39ebc65be136d3a"/>
+        <VersionInfo resourceName="RaiseFault-Jump-To-Fault-Rules" version="b3f6e74d65c4c79c837685820c99d0fc89f2d966e119af21d6dc6adc2ac97de3ee92dd442949635023ac32b55f2017859d61a096f54128ab23ae77af34f5dfe3"/>
+        <VersionInfo resourceName="Service-Callout-Location-From-Ip-Address" version="e53658e736daff74087697da4dac8e1cf6ee00cf1c7f0e88339f69f2cd8949ba63b5aaae1b855956801da98e9c96124fe54ac830bd21d912746541d8ef6fba60"/>
+        <VersionInfo resourceName="remove-query-param-apikey" version="fedac28ff50d0bca86015a692d1b6e093718a7c700308eebb8b74c4b95a71815a7bc9dd92d2809176c881a6affe89177a87205bb9ae618083036394d199b3d05"/>
+        <VersionInfo resourceName="verify-api-key" version="ffa1f40d421517351857d6529580480eb2f6c29f13957deab809aac70117ae7d810a8c2b33eae1c19da8aec162d4f16427cfd989261d43e3d9011033843b964c"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="7f0c915d3d255294edbd38e4f0830693d8a4ae1e1346582b4ba0855ee905cdf2b9a28a52712afb24b44c0e9eb7fc2f79e2f194e002732240485129c68173dc1f"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://JS-Google-Distance-Matrix-Call-Out.js" version="6b10a61364d76b8ff85b1109209474b1efaf93fabceefe8e3137447c974b770d75255b4d861eb8e0c237667012faace1f5c226dfa5c4dd1c33be44a241b0eb46"/>
+        <VersionInfo resourceName="jsc://JS-Response-Beautify.js" version="6ff7bf7944eddbeb1bd0880ea7970f979acfb55b14c4df65ec8651ad14ae2e472773d8d53dd27a7c57e8b6844fceb8a6dbb80db05234cb3492ba0433d1a7b472"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="294ddc6155c5319b5d2e7162fe1ae7a66b5ac13b7c89996b96b5372184397d5e6ac8a21fc9d67604c4a514595857c1691e9767ac12be2014c2346461ca115052"/>
+    </TargetEndpoints>
+</Manifest>

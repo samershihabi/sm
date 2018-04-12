@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="8" name="OpenBanking-Geo-Location">
+    <Basepaths>/location/v1</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1517592830787</CreatedAt>
+    <CreatedBy>saleh.meshael@arabbank.com.jo</CreatedBy>
+    <Description></Description>
+    <DisplayName>OpenBanking-Geo-Location</DisplayName>
+    <LastModifiedAt>1520409333119</LastModifiedAt>
+    <LastModifiedBy>saleh.meshael@arabbank.com.jo</LastModifiedBy>
+    <ManifestVersion>9d51add39d8dd6ef9a8990384f299cc6d5254364956bd13e5a41fe9bda1abcc5f8e44d79a3f3078889f8958eedee3f40996747348d912bb9c9bd0910c97a3db2</ManifestVersion>
+    <Policies>
+        <Policy>ATMs-Response-Cache</Policy>
+        <Policy>Assign-Message-Country-Code-To-Path-From-IP</Policy>
+        <Policy>Assign-Message-Country-Code-To-Path-From-Query-Param</Policy>
+        <Policy>Branches-Response-Cache</Policy>
+        <Policy>Extract-Variables-IP-Geo-Location-Origin</Policy>
+        <Policy>Extract-Variables-IP-Geo-Location</Policy>
+        <Policy>Extract-Variables-Request-Query-Params-With-Ip-Address</Policy>
+        <Policy>Extract-Variables-Request-Query-Params-Without-Ip-Address</Policy>
+        <Policy>Flow-Callout-Fault-Rules-Handling</Policy>
+        <Policy>ITMs-Response-Cache</Policy>
+        <Policy>JS-Google-Distance-Matrix-Call-Out</Policy>
+        <Policy>JS-Response-Beautify</Policy>
+        <Policy>KVM-Geo-Location-Config</Policy>
+        <Policy>RaiseFault-Jump-To-Fault-Rules</Policy>
+        <Policy>Service-Callout-Location-From-Ip-Address</Policy>
+        <Policy>remove-query-param-apikey</Policy>
+        <Policy>verify-api-key</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://JS-Google-Distance-Matrix-Call-Out.js</Resource>
+        <Resource>jsc://JS-Response-Beautify.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

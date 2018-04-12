@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TargetEndpoint name="default">
+    <Description/>
+    <FaultRules>
+        <FaultRule name="Shared-Fault-Rules">
+            <Step>
+                <Name>Flow-Callout-Fault-Rules-Handling</Name>
+            </Step>
+        </FaultRule>
+    </FaultRules>
+    <DefaultFaultRule name="all">
+        <AlwaysEnforce>true</AlwaysEnforce>
+        <Step>
+            <Name>Flow-Callout-Fault-Rules-Handling</Name>
+        </Step>
+    </DefaultFaultRule>
+    <Flows>
+        <Flow name="Branches">
+            <Condition>(proxy.pathsuffix MatchesPath "/branches") and (request.verb = "GET") </Condition>
+            <Request/>
+            <Response/>
+        </Flow>
+        <Flow name="ATMs">
+            <Condition>(proxy.pathsuffix MatchesPath "/atms") and (request.verb = "GET") </Condition>
+            <Request/>
+            <Response/>
+        </Flow>
+        <Flow name="ITMs">
+            <Condition>(proxy.pathsuffix MatchesPath "/itms") and (request.verb = "GET") </Condition>
+            <Request/>
+            <Response/>
+        </Flow>
+    </Flows>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>Assign-Message-Country-Code-To-Path-From-Query-Param</Name>
+                <Condition>(ab.ip.country-code is null)</Condition>
+            </Step>
+            <Step>
+                <Name>Assign-Message-Country-Code-To-Path-From-IP</Name>
+                <Condition>(ab.ip.country-code isNot null)</Condition>
+            </Step>
+        </Request>
+        <Response>
+            <Step>
+                <Name>JS-Google-Distance-Matrix-Call-Out</Name>
+                <Condition>(ab.request.queryparam.radius != null) or (ab.request.queryparam.origin != null)</Condition>
+            </Step>
+            <Step>
+                <Name>RaiseFault-Jump-To-Fault-Rules</Name>
+                <Condition>(ab.js.error is true)</Condition>
+            </Step>
+        </Response>
+    </PreFlow>
+    <HTTPTargetConnection>
+        <URL>https://arabbank-test-dev.apigee.net/locations/mocker</URL>
+    </HTTPTargetConnection>
+</TargetEndpoint>

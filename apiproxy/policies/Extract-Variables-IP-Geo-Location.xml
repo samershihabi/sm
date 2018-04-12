@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="Extract-Variables-IP-Geo-Location">
+    <DisplayName>Extract-Variables-IP-Geo-Location</DisplayName>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <Variable name="ab.ip.country-code">
+            <JSONPath>$.country</JSONPath>
+        </Variable>
+        <Variable name="ab.ip.coordinations">
+            <JSONPath>$.loc</JSONPath>
+        </Variable>
+        <Variable name="ab.ip.region">
+            <JSONPath>$.region</JSONPath>
+        </Variable>
+        <Variable name="ab.ip.city">
+            <JSONPath>$.city</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">ServiceCallout.response</Source>
+</ExtractVariables>
