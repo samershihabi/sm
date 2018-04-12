@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FlowCallout async="false" continueOnError="false" enabled="true" name="Flow-Callout-Fault-Rules-Handling">
+    <DisplayName>Flow-Callout-Fault-Rules-Handling</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <SharedFlowBundle>Error-Handling-Sharedflow</SharedFlowBundle>
+</FlowCallout>

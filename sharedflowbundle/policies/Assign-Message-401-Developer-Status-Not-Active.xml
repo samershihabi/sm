@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Assign-Message-401-Developer-Status-Not-Active">
+    <DisplayName>Assign-Message-401-Developer-Status-Not-Active</DisplayName>
+    <AssignVariable>
+        <Name>flow.error.code</Name>
+        <Value>401.005.000</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.message</Name>
+        <Value>Developer Status Not Active.</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.url</Name>
+        <Value>https://developer.arabbank.com.jo/errors/401005000</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.status</Name>
+        <Value>401</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.reason</Name>
+        <Value>Unauthorized</Value>
+    </AssignVariable>
+</AssignMessage>

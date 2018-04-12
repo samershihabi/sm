@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="Service-Callout-Location-From-Ip-Address">
+    <DisplayName>Service-Callout-Location-From-Ip-Address</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="ab.ip.location.request">
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    </Request>
+    <Response>ab.ip.location.response</Response>
+    <HTTPTargetConnection>
+        <Properties/>
+        <URL>https://ipinfo.io/{proxy.client.ip}/json</URL>
+    </HTTPTargetConnection>
+</ServiceCallout>

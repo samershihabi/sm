@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="KVM-Geo-Location-Config" mapIdentifier="geolocation-config">
+    <DisplayName>KVM-Geo-Location-Config</DisplayName>
+    <Properties/>
+    <Get assignTo="private.ab.google_distance_matrix_apikey_3">
+        <Key>
+            <Parameter>google-distance-matrix-apikey_3</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="private.ab.google_distance_matrix_apikey_1">
+        <Key>
+            <Parameter>google-distance-matrix-apikey_1</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="private.ab.google_distance_matrix_apikey_2">
+        <Key>
+            <Parameter>google-distance-matrix-apikey_2</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="private.ab.google_distance_matrix_apikey_4">
+        <Key>
+            <Parameter>google-distance-matrix-apikey_4</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="private.ab.google_distance_matrix_apikey_5">
+        <Key>
+            <Parameter>google-distance-matrix-apikey_5</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="private.ab.google_distance_matrix_apikey_6">
+        <Key>
+            <Parameter>google-distance-matrix-apikey_6</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="private.ab.google_distance_matrix_apikey_7">
+        <Key>
+            <Parameter>google-distance-matrix-apikey_7</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="private.ab.google_distance_matrix_apikey_8">
+        <Key>
+            <Parameter>google-distance-matrix-apikey_8</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="private.ab.google_distance_matrix_apikey_9">
+        <Key>
+            <Parameter>google-distance-matrix-apikey_9</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="private.ab.google_distance_matrix_apikey_10">
+        <Key>
+            <Parameter>google-distance-matrix-apikey_10</Parameter>
+        </Key>
+    </Get>
+</KeyValueMapOperations>

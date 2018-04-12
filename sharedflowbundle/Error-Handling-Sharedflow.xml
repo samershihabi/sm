@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="9" name="Error-Handling-Sharedflow">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1517998289753</CreatedAt>
+    <CreatedBy>ramiz.sweiss@arabbank.com.jo</CreatedBy>
+    <Description>Shared method for handling faults</Description>
+    <DisplayName>SharedFlow_FaultRulesHanding</DisplayName>
+    <LastModifiedAt>1520757546932</LastModifiedAt>
+    <LastModifiedBy>ramiz.sweiss@arabbank.com.jo</LastModifiedBy>
+    <ManifestVersion>09c8a1dc10d1232f250d248b2ca105ab956c4b2dd061c627258a71b4dd10170fe42900da3a9b293b93d388d52601998fd4cda047805f397f99e6581f3f64bfa7</ManifestVersion>
+    <Policies>
+        <Policy>Assign-Message-400-Bad-Request</Policy>
+        <Policy>Assign-Message-400-Error-Variables</Policy>
+        <Policy>Assign-Message-400-Invalid-Payload</Policy>
+        <Policy>Assign-Message-400-Wrong-Verb</Policy>
+        <Policy>Assign-Message-401-API-Key-Not-Approved</Policy>
+        <Policy>Assign-Message-401-App-Not-Approved</Policy>
+        <Policy>Assign-Message-401-Company-Status-Not-Active</Policy>
+        <Policy>Assign-Message-401-Developer-Status-Not-Active</Policy>
+        <Policy>Assign-Message-401-Failed-To-Resolve-Access-Token</Policy>
+        <Policy>Assign-Message-401-Failed-To-Resolve-Authorization-Code</Policy>
+        <Policy>Assign-Message-401-Insufficient-Scope</Policy>
+        <Policy>Assign-Message-401-Invalid-API-Key-For-Given-Resource</Policy>
+        <Policy>Assign-Message-401-Invalid-API-Key</Policy>
+        <Policy>Assign-Message-401-Missing-API-Key</Policy>
+        <Policy>Assign-Message-401-Request-Timeout</Policy>
+        <Policy>Assign-Message-429-Erro-rVariables</Policy>
+        <Policy>Assign-Message-500-Gateway-Timeout</Policy>
+        <Policy>Assign-Message-500-General-MW-Error</Policy>
+        <Policy>Assign-Message-500-JS-Policy-Error-Variables</Policy>
+        <Policy>Assign-Message-500-e9999</Policy>
+        <Policy>Assign-Message-500-f9999</Policy>
+        <Policy>RaiseFault.DefaultDetailedErrorResponse</Policy>
+        <Policy>RaiseFault.DefaultErrorResponse</Policy>
+    </Policies>
+    <Resources/>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>

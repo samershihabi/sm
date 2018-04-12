@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+    <Policies>
+        <VersionInfo resourceName="Assign-Message-400-Bad-Request" version="32634fb4b8cc4976c8449f610852c7a89207c841b5f3a81ec9e73f85406ce86855f57d2fd9c74e976dd28cc299d30b1d62c33557f3dae7c3f9b12b32b90c0532"/>
+        <VersionInfo resourceName="Assign-Message-400-Error-Variables" version="6598347c6a09feaa8deb9b9e5ef28c02aa9d9d7080fe0f3da77c0bd8d69ce154d1682205c9fd0d5f3f0c1eafbfcf7e77a573558c0cc990c6132ff64717ed2d88"/>
+        <VersionInfo resourceName="Assign-Message-400-Invalid-Payload" version="eb9344dc75b7d24e9919c7c22ee7da00d615255f56aa409bf960c112b0016133cb34daae17b1b612d6e87c11e78860b3749fef3dfb04ab4a215e60f8f75e72fd"/>
+        <VersionInfo resourceName="Assign-Message-400-Wrong-Verb" version="e06faf2f5b60d973fab7c76ffe46b09c61f765b8492d159f9ca0502893970b2db75f00155a522436947dbb5fa26835c29e0eff9597e82a07db703fe3af21737f"/>
+        <VersionInfo resourceName="Assign-Message-401-API-Key-Not-Approved" version="647e4201e8b7c032bbe1c398b7bc410b838e2105cbd7ded438878470011408c63968a68d84e6211f197c74db34759344d71b7373ff46d506bc8dafea6dc0522b"/>
+        <VersionInfo resourceName="Assign-Message-401-App-Not-Approved" version="2ddacff9183e551c0a0e7ad5a11b0a93cb1c644ab1e92c21f0e4ea2ca84b404242f231d8768eb1baa2f4d28fb3bf5fb478dce482cf2133bffe6704c9289dd7e8"/>
+        <VersionInfo resourceName="Assign-Message-401-Company-Status-Not-Active" version="da4de77c5cef56a6aa7f51c1330f1df717d3ba2e73d0481f67e2222b83566116fe116d08ecc255e7f7d0938053e3b7a870a89daf49f5f4e02065496b8c8633e5"/>
+        <VersionInfo resourceName="Assign-Message-401-Developer-Status-Not-Active" version="80b39e767dbe092bede50697771ea295b2c49c26b6b5ebdbab01b29de21e23d50538abc7e77577ee869ce87f80c57b35374e9967b0df28e903ca81dfbf815d73"/>
+        <VersionInfo resourceName="Assign-Message-401-Failed-To-Resolve-Access-Token" version="643b36a6f02da1b33c8e2448075e18ca6c807c04184ce9334a8285ed860329dc6217a108c412b846fcf64bf0e58182d80d45c7b437292f5dfcb22cf97a89a387"/>
+        <VersionInfo resourceName="Assign-Message-401-Failed-To-Resolve-Authorization-Code" version="39d368a970618d791d8f2bde666c8c788213fbfeb1d589ad149c32297e11afbb3a157c980f42c0e76f839be14e05bf13dc9e40b4373e1890f5fe04183747100b"/>
+        <VersionInfo resourceName="Assign-Message-401-Insufficient-Scope" version="cf16e93da9bc6e1ba4992e7f5156e4799b2ac045f1e4b57a19e1ccba9b30e99ae077e979f95ca94042f66985eb36f561145bb7c495aeee0d866a010d0a181ac4"/>
+        <VersionInfo resourceName="Assign-Message-401-Invalid-API-Key" version="102cd4a56c271bae6b129411be6b5d2bc555f8299f1435b1b21bb38e54fa3ced6e9f57d95f27913e854aa2a638f1934e81404203cdae4f2455f9fc0d5b88f969"/>
+        <VersionInfo resourceName="Assign-Message-401-Invalid-API-Key-For-Given-Resource" version="65903622291bcc48088d243273d27c9e0cf550fd18fa707894f784b3525857c2de644ee499ceae3a461bd56afa70b0651cd093f66bb550e1008f1dffdf3d8afb"/>
+        <VersionInfo resourceName="Assign-Message-401-Missing-API-Key" version="047b8ce458b7dc0e335c181c0602e046a741bbb7a657c0e8df810f5fe4a131e223be504f7e8b46dadaeeca7f33b88d66f302d86825a9634afb58c201149cb3c0"/>
+        <VersionInfo resourceName="Assign-Message-401-Request-Timeout" version="6c3c60f747480e2e809b8a2119a1133322be6812e07c5eac02fa2df2042f69367bf49722c0a760b65f36fd5f8d2dd19040fc11972e6352d0e4dbdd3434c9a09f"/>
+        <VersionInfo resourceName="Assign-Message-429-Erro-rVariables" version="6e9a172d48358079cb9a1ee4d62eb87e90b2da8fc99d015d59a98caf572421a0c060324f8083481828d6419ad5b9ec72c55165cc24c48328c8e10acb468ad644"/>
+        <VersionInfo resourceName="Assign-Message-500-Gateway-Timeout" version="aa23a1e218e8817e0db26b52fbc075c168185404505953093e117373c24ead3dafe3492df61051ab97186349d11992f4fc470a64c7ae49ac90bd817664e5763e"/>
+        <VersionInfo resourceName="Assign-Message-500-General-MW-Error" version="d9eb99cab51b03873a9bfcff51e9338227bef51e669764b8ef72ac84c1c43c85eda3d4ad86d875cbd8991d983e38e6ca587ce4f249108d3af1f103dcc3516e5f"/>
+        <VersionInfo resourceName="Assign-Message-500-JS-Policy-Error-Variables" version="bad548059a315b42c7d79cbcb3fc55764aac22c6c8d70e67d5e99daad50c9adb061e9585bb8d9cd77c0c19a642a38807659aacd4c87801708cfce77699e89b2d"/>
+        <VersionInfo resourceName="Assign-Message-500-e9999" version="7de27c1a625a7e22f4d8a539a95becef897da522ea938ac57f1f8ab9a47f9c219a63c2c5ae60f5e639f7639c7d4b5c515fe95cb796e83f8e23690579f134a6db"/>
+        <VersionInfo resourceName="Assign-Message-500-f9999" version="2ca7917deda850337829417e9a08317e308290e998a592dcc540f8bd17051b7e513cb91a5d3dc23ef1531a258e5c21547cd8c865d227f75610e98f0be0c89c6d"/>
+        <VersionInfo resourceName="RaiseFault.DefaultDetailedErrorResponse" version="8d6e192b0148a4beec7fb84682047e100bf987d518bb6765b6163aef58c3a6336d6b978c23cc423b020af4b4572d800d6b5a6e081be9349af46bd20e883e6820"/>
+        <VersionInfo resourceName="RaiseFault.DefaultErrorResponse" version="7fcb54456712784f8e8b367dcdf440119204a7df3e71e1a4376bea42d1882512f7ef5fb68ffeb351abe1ba5274d70b9f69cc8d70bd0b3b53032b4f51ac82283c"/>
+    </Policies>
+    <ProxyEndpoints/>
+    <Resources/>
+    <SharedFlows>
+        <VersionInfo resourceName="default" version="51f32d9d848a1e209dcbc42d053973af90e991761c70d1765b2edaddd94c900d9fcf1c2503435f12e2aa9cd7ab81e177e3d936675e4b0b550665673d94a297af"/>
+    </SharedFlows>
+    <TargetEndpoints/>
+</Manifest>

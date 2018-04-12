@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Assign-Message-401-Failed-To-Resolve-Access-Token">
+    <DisplayName>Assign-Message-Failed-To-Resolve-Access-Token</DisplayName>
+    <AssignVariable>
+        <Name>flow.error.code</Name>
+        <Value>401.010.000</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.message</Name>
+        <Value>Failed To Resolve Access Token</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.url</Name>
+        <Value>https://developer.arabbank.com.jo/errors/401010000</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.status</Name>
+        <Value>401</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.reason</Name>
+        <Value>Unauthorized</Value>
+    </AssignVariable>
+</AssignMessage>

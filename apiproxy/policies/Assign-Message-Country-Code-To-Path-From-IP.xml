@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Assign-Message-Country-Code-To-Path-From-IP">
+    <DisplayName>Assign-Message-Country-Code-To-Path-From-IP</DisplayName>
+    <AssignVariable>
+        <Name>target.url</Name>
+        <Value>https://arabbank-test-dev.apigee.net/locations/mocker/{proxy.pathsuffix}/{ab.ip.country-code}</Value>
+    </AssignVariable>
+    <AssignTo createNew="false" type="request"/>
+</AssignMessage>

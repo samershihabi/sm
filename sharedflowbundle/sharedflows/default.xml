@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlow name="default">
+    <Step>
+        <Name>Assign-Message-400-Bad-Request</Name>
+    </Step>
+    <Step>
+        <Name>Assign-Message-400-Wrong-Verb</Name>
+        <Condition>(wrong.verb is true)</Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-401-Missing-API-Key</Name>
+        <Condition>(fault.name = "FailedToResolveAPIKey")</Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-400-Invalid-Payload</Name>
+        <Condition>
+                    (fault.name = "ExceededContainerDepth") or 
+                    (fault.name = "ExceededObjectEntryCount") or 
+                    (fault.name = "ExceededArrayElementCount") or 
+                    (fault.name = "ExceededObjectEntryNameLength") or 
+                    (fault.name = "ExceededStringValueLength") or 
+                    (fault.name = "SourceUnavailable") or 
+                    (fault.name = "ExecutionFailed")
+                </Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-401-Invalid-API-Key</Name>
+        <Condition>(fault.name = "InvalidApiKey")</Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-401-API-Key-Not-Approved</Name>
+        <Condition>(fault.name = "ApiKeyNotApproved")</Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-500-f9999</Name>
+        <Condition>(ab.mw.error.code = "F9999")</Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-500-e9999</Name>
+        <Condition>(ab.mw.error.code = "E9999")</Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-500-General-MW-Error</Name>
+        <Condition>(ab.mw.error.code != "E9999") and (ab.mw.error.code != "F9999") and (ab.mw.error.code != null)</Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-401-Developer-Status-Not-Active</Name>
+        <Condition>(fault.name = "DeveloperStatusNotActive")</Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-401-Company-Status-Not-Active</Name>
+        <Condition>(fault.name = "CompanyStatusNotActive")</Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-401-Invalid-API-Key-For-Given-Resource</Name>
+        <Condition>(fault.name = "InvalidApiKeyForGivenResource")</Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-401-App-Not-Approved</Name>
+        <Condition>(fault.name = "app_not_approved")</Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-401-Failed-To-Resolve-Access-Token</Name>
+        <Condition>(fault.name = "FailedtoResolveAccessToken")</Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-401-Failed-To-Resolve-Authorization-Code</Name>
+        <Condition>(fault.name = "FailedToResolveAuthorizationCode")</Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-401-Insufficient-Scope</Name>
+        <Condition>(fault.name = "InsufficientScope")</Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-500-JS-Policy-Error-Variables</Name>
+        <Condition>(ab.js.error is true)</Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-401-Request-Timeout</Name>
+        <Condition>(message.status.code = 408)</Condition>
+    </Step>
+    <Step>
+        <Name>Assign-Message-500-Gateway-Timeout</Name>
+        <Condition>(message.status.code = 504)</Condition>
+    </Step>
+    <Step>
+        <Name>RaiseFault.DefaultErrorResponse</Name>
+    </Step>
+</SharedFlow>

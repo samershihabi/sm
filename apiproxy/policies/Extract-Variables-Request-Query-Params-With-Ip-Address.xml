@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="Extract-Variables-Request-Query-Params-With-Ip-Address">
+    <DisplayName>Extract-Variables-Request-Query-Params-With-Ip-Address</DisplayName>
+    <Properties/>
+    <QueryParam name="origin">
+        <Pattern ignoreCase="true">{origin}</Pattern>
+    </QueryParam>
+    <QueryParam name="radius">
+        <Pattern ignoreCase="true">{radius}</Pattern>
+    </QueryParam>
+    <QueryParam name="limit">
+        <Pattern ignoreCase="true">{limit}</Pattern>
+    </QueryParam>
+    <QueryParam name="offset">
+        <Pattern ignoreCase="true">{offset}</Pattern>
+    </QueryParam>
+    <VariablePrefix>ab.request.queryparam</VariablePrefix>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</ExtractVariables>

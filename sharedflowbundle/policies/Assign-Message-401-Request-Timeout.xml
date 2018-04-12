@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Assign-Message-401-Request-Timeout">
+    <DisplayName>Assign-Message-401-Request-Timeout</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>flow.error.code</Name>
+        <Value>500.408.000</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.message</Name>
+        <Value>Request Timeout.</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.url</Name>
+        <Value>https://developer.arabbank.com.jo/errors/500408000</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.status</Name>
+        <Value>500</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.reason</Name>
+        <Value>Request Timeout</Value>
+    </AssignVariable>
+</AssignMessage>

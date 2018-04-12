@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Assign-Message-500-e9999">
+    <DisplayName>Assign-Message-500-e9999</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>flow.error.code</Name>
+        <Value>500.200.002</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.message</Name>
+        <Value>Internal Server Error</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.url</Name>
+        <Value>https://developer.arabbank.com.jo/errors/500200002</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.status</Name>
+        <Value>500</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>flow.error.reason</Name>
+        <Value>Internal Server Error</Value>
+    </AssignVariable>
+</AssignMessage>

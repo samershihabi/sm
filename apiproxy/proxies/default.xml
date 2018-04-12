@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description>
+        The value of this proxy is to retrieve Arab Bank plc Branches, ATMs and ITMs details, featuers and return the nearest Branches, ATMs and ITMs depending on the origin location point(lattiude adn longitude).
+    </Description>
+    <FaultRules>
+        <FaultRule name="Shared-Fault-Rules">
+            <Step>
+                <Name>Flow-Callout-Fault-Rules-Handling</Name>
+            </Step>
+        </FaultRule>
+    </FaultRules>
+    <DefaultFaultRule name="all">
+        <AlwaysEnforce>true</AlwaysEnforce>
+        <Step>
+            <Name>Flow-Callout-Fault-Rules-Handling</Name>
+        </Step>
+    </DefaultFaultRule>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>verify-api-key</Name>
+            </Step>
+            <Step>
+                <Name>remove-query-param-apikey</Name>
+            </Step>
+            <Step>
+                <Name>Service-Callout-Location-From-Ip-Address</Name>
+            </Step>
+            <Step>
+                <Name>Extract-Variables-IP-Geo-Location</Name>
+                <Condition>(request.queryparam.country is null)   </Condition>
+            </Step>
+            <Step>
+                <Name>Extract-Variables-IP-Geo-Location-Origin</Name>
+                <Condition>(request.queryparam.country isNot null) and (request.queryparam.radius isNot null)</Condition>
+            </Step>
+            <Step>
+                <Name>Extract-Variables-Request-Query-Params-With-Ip-Address</Name>
+                <Condition>(request.queryparam.country is null)    </Condition>
+            </Step>
+            <Step>
+                <Name>Extract-Variables-Request-Query-Params-Without-Ip-Address</Name>
+                <Condition>(request.queryparam.country isNot null)</Condition>
+            </Step>
+            <Step>
+                <Name>KVM-Geo-Location-Config</Name>
+            </Step>
+        </Request>
+        <Response>
+            <Step>
+                <Name>JS-Response-Beautify</Name>
+            </Step>
+            <Step>
+                <Name>RaiseFault-Jump-To-Fault-Rules</Name>
+                <Condition>(ab.js.error is true)</Condition>
+            </Step>
+        </Response>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <Flows>
+        <Flow name="Branches">
+            <Description>this resource is used to return branches locations, details and the services provided there.</Description>
+            <Request>
+
+            </Request>
+            <Response>
+
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/branches") and (request.verb = "GET") </Condition>
+        </Flow>
+        <Flow name="ATMs">
+            <Description>this resource is used to get the geo locations for AB ATMs</Description>
+            <Request>
+
+            </Request>
+            <Response>
+
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/atms") and (request.verb = "GET") </Condition>
+        </Flow>
+        <Flow name="ITMs">
+            <Description>this resource is used to get the geo locations for AB ITMs</Description>
+            <Request>
+
+            </Request>
+            <Response>
+
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/itms") and (request.verb = "GET")  </Condition>
+        </Flow>
+    </Flows>
+    <HTTPProxyConnection>
+        <BasePath>/location/v1</BasePath>
+        <Properties/>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>
