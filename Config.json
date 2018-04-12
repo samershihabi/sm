@@ -1,71 +1,193 @@
 {
-  "organization": "org-1",
-  "username": "user1",
-  "password": "password",
-  "dev-env": {
-    "cache": [
-      {
-        "name": "cache-name",
-        "description": "a description of the cache resource",
-        "expirySettings": "timeInSec || timeOfDay (hh:mm:ss) || expiryDate (mm-dd-yyyy)",
-        "overflowToDisk": "true || false",
-        "skipCacheIfElementSizeInKBExceeds": "disable || enable"
-      }
-    ],
-    "kvm": [
-      {
-        "name": "Map_name",
-        "encrypted": "true || false",
-        "entery": [
+  "organization": "salehmashal",
+  "api":{
+    "proxyname": "geolocationAPI",
+    "delay":"1",
+    "override":false
+  },
+  "environment": {
+    "test": {
+      "sharedflow": [{
+        "name": "Error-Handling-Sharedflow"
+      }],
+      "kvm": [
+        {
+        "encrypted": "true",
+        "entry": [
           {
-            "name": "key1",
-            "value": "value_one"
+            "name": "google-distance-matrix-apikey_2",
+            "value": "2"
           },
           {
-            "name": "key2",
-            "value": "value_two"
-          }
-        ]
-      }
-    ],
-    "product": [
-      {
-        "name": "{name}",
-        "displayName": "{display_name}",
-        "approvalType": {
-          "manual || auto"
-        },
-        "attributes": [
-          {
-            "name": "access",
-            "value": "{public, private, or internal}"
+            "name": "google-distance-matrix-apikey_1",
+            "value": "1"
           },
           {
-            "name": "{attribute_name2}",
-            "value": "{value2}"
+            "name": "google-distance-matrix-apikey_10",
+            "value": "10"
+          },
+          {
+            "name": "google-distance-matrix-apikey_9",
+            "value": "9"
+          },
+          {
+            "name": "google-distance-matrix-apikey_8",
+            "value": "8"
+          },
+          {
+            "name": "google-distance-matrix-apikey_7",
+            "value": "7"
+          },
+          {
+            "name": "google-distance-matrix-apikey_6",
+            "value": "6"
+          },
+          {
+            "name": "google-distance-matrix-apikey_5",
+            "value": "5"
+          },
+          {
+            "name": "google-distance-matrix-apikey_4",
+            "value": "4"
+          },
+          {
+            "name": "google-distance-matrix-apikey_3",
+            "value": "3"
           }
         ],
-        "description": "{description}",
+        "name": "geolocation-config"
+        }],
+      "cache":[
+        {
+        "body": {
+          "description": "description",
+          "expirySettings": {
+            "timeOfDay": {
+              "value": "00:00:00"
+            }
+          }
+        },
+        "name": "testCache"
+      }],
+      "product":[ {
+        "name": "geolocationProduct",
+        "displayName": "geolocationProduct",
+        "approvalType": "auto",
+        "description": "testing deployment using config file",
         "apiResources": [
-          "{/resource1}",
-          "{/resource2}"
+          "/",
+          "/**"
         ],
         "environments": [
-          "{test}",
-          "{prod}"
+          "test"
         ],
         "proxies": [
-          "{proxy1}",
-          "{proxy2}"
-        ],
-        "quota": "{quota}",
-        "quotaInterval": "{quota_interval}",
-        "quotaTimeUnit": "{quota_unit}",
-        "scopes": [
-          "{scope1}",
-          "{scope2}"
+          "geolocationAPI"
         ]
-      }
-    ]
+      }],
+      "developer": [{
+        "email": "test@gmail.com",
+        "firstName": "test",
+        "lastName": "test",
+        "userName": "test"
+      }],
+      "app": [{
+        "name": "testApp",
+        "apiProducts": [
+          "helloworld"
+        ]
+      }]
+    },
+    "prod": {
+      "sharedflow": [{
+        "name": "Error-Handling-Sharedflow"
+      }],
+      "kvm":[{
+        "encrypted": "true",
+        "entry": [
+          {
+            "name": "google-distance-matrix-apikey_2",
+            "value": "2"
+          },
+          {
+            "name": "google-distance-matrix-apikey_1",
+            "value": "1"
+          },
+          {
+            "name": "google-distance-matrix-apikey_10",
+            "value": "10"
+          },
+          {
+            "name": "google-distance-matrix-apikey_9",
+            "value": "9"
+          },
+          {
+            "name": "google-distance-matrix-apikey_8",
+            "value": "8"
+          },
+          {
+            "name": "google-distance-matrix-apikey_7",
+            "value": "7"
+          },
+          {
+            "name": "google-distance-matrix-apikey_6",
+            "value": "6"
+          },
+          {
+            "name": "google-distance-matrix-apikey_5",
+            "value": "5"
+          },
+          {
+            "name": "google-distance-matrix-apikey_4",
+            "value": "4"
+          },
+          {
+            "name": "google-distance-matrix-apikey_3",
+            "value": "3"
+          }
+        ],
+        "name": "geolocation-config"
+      }],
+      "cache":[ {
+        "body": {
+          "description": "description",
+          "expirySettings": {
+            "timeOfDay": {
+              "value": "00:00:00"
+            }
+          }
+        },
+        "name": "testCache"
+      }],
+      "APIproduct": [{
+        "name": "geolocationProduct",
+        "displayName": "geolocationProduct",
+        "approvalType": "auto",
+        "description": "testing deployment using config file",
+        "apiResources": [
+          "/",
+          "/**"
+        ],
+        "environments": [
+          "test"
+        ],
+        "proxies": [
+          "geolocationAPI"
+        ]
+      }],
+      "developer": [{
+        "email": "test@gmail.com",
+        "firstName": "test",
+        "lastName": "test",
+        "userName": "test"
+      }],
+      "app": [{
+        "name": "testApp",
+        "apiProducts": [
+          "geolocationProduct"
+        ]
+      }]
+    }
+
   }
 }

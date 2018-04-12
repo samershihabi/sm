@@ -1,0 +1,34 @@
+{
+  "auto_deployment":[
+    {
+      "type":"input",
+      "name":"username",
+      "message":"Enter your email"
+    },
+    {
+      "type":"password",
+      "name":"password",
+      "message":"Enter your password"
+    },
+    {
+      "type":"input",
+      "name":"environments",
+      "message":"Enter the environments names"
+    },
+    {
+      "type":"input",
+      "name":"config_file_path",
+      "message":"Enter the path for the configuration file"
+    },
+    {
+      "type":"input",
+      "name":"sharedflow_file_path",
+      "message":"Enter the path for the sharedflow bundle "
+    },
+    {
+      "type":"input",
+      "name":"proxy_path",
+      "message":"Enter the path for the apiproxy folder"
+    }
+  ]
+}

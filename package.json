@@ -1,10 +1,13 @@
 {
-  "name": "apigeefit",
+  "name": "apiglue",
   "version": "0.0.1",
-  "description": "Configuration and Maintinanse",
+  "description": "Configuration and Maintenance",
   "main": "app.js",
+  "preferGlobal": "true",
+  "bin": "./lib/cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "apiglue": "echo\"node index.js\""
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,9 @@
     "apigeetool": "latest",
     "async": "^2.6.0",
     "basic-authorization-header": "^0.2.7",
+    "commander": "^2.15.1",
     "in_array": "^1.1.0",
+    "inquirer": "^5.2.0",
     "is-upper-case": "^1.1.2",
     "jszip": "^3.1.5",
     "node-dir": "^0.1.17",
